@@ -60,12 +60,24 @@ int main(void)
     std::cout << "Exception: " << e.what() << std::endl;
   }
 
-  std::cout << std::endl << "############## test: too high (0) ##############" << std::endl << std::endl;
+  std::cout << std::endl << "############## [fail] test: too high (0) ##############" << std::endl << std::endl;
   try
   {
     Bureaucrat f("high", 0);
     f.incrementGrade();
     std::cout << f << std::endl;
+  }
+  catch (std::exception& e)
+  {
+    std::cout << "Exception: " << e.what() << std::endl;
+  }
+
+  std::cout << std::endl << "############## [fail] test: too low (151) ##############" << std::endl << std::endl;
+  try
+  {
+    Bureaucrat g("low", 151);
+    g.decrementGrade();
+    std::cout << g << std::endl;
   }
   catch (std::exception& e)
   {
