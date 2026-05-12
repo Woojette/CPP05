@@ -5,7 +5,7 @@
 # include <string>
 # include <exception>
 
-class Form;
+class AForm;
 
 class Bureaucrat
 {
@@ -36,7 +36,9 @@ class Bureaucrat
       public:
         virtual const char* what() const throw();
     };
-    void  signForm(Form& form);
+    void  signAForm(AForm& Aform);
+
+    void  executeForm(AForm const & form) const;
 };
 
 std::ostream& operator<<(std::ostream& out, const Bureaucrat& bureaucrat);

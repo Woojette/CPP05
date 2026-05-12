@@ -5,7 +5,10 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -Iincludes
 
 SRCS =	srcs/main.cpp \
 				srcs/Bureaucrat.cpp \
-				srcs/Form.cpp
+				srcs/AForm.cpp \
+				srcs/ShrubberyCreationForm.cpp \
+				srcs/RobotomyRequestForm.cpp \
+				srcs/PresidentialPardonForm.cpp
 
 OBJDIR = objs
 OBJS = $(patsubst srcs/%.cpp,$(OBJDIR)/%.o,$(SRCS))
