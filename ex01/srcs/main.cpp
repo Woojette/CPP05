@@ -49,7 +49,7 @@ int main(void)
   std::cout << std::endl << "############## 6. test: form 152, 20 ##############" << std::endl << std::endl;
   try
   {
-    Form formToohigh("form too high", 152, 20);
+    Form formToohigh("form too low", 152, 20);
   }
   catch (std::exception& e)
   {

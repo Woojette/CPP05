@@ -46,7 +46,7 @@ int main(void)
   }
 
   std::cout << std::endl << "############## 3. test: too low (150) ##############" << std::endl << std::endl;
-  Bureaucrat d("high", 150);
+  Bureaucrat d("low", 150);
   std::cout << d << std::endl;
 
   std::cout << std::endl << "--------------- decrement (150 -> 151) ---------------" << std::endl << std::endl;
