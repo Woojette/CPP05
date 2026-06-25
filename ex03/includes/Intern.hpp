@@ -13,8 +13,10 @@ class Intern
 	public:
 		Intern();
 		~Intern();
+		Intern(const Intern &other);
+		Intern &operator=(const Intern &other);
 
-		AForm*	makeform(std::string name, std::string form);
+		AForm*	makeForm(std::string name, std::string target);
 };
 
 #endif
